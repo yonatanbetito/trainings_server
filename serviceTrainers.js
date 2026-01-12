@@ -11,4 +11,5 @@ export function readById(id){
     const trainers = readFromJsonFile("./db/trainers.json")
     const trainer = trainers.filter((t) => t.id === id)
     return trainer[0]
+    //מה קורה אם אין רשימה זה מחזיר שגיאה 
 }
